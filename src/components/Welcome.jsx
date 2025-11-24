@@ -84,11 +84,34 @@ const Welcome = () => {
         {renderText("Portfolio", "text-9xl italic font-georama")}
       </h1>
 
-      <div className="small-screen">
-        <p>Hey there! This portfolio is designed for desktop screens.</p>
+      {/* Mobile Warning Overlay */}
+      <div className="mobile-warning">
+        <div className="warning-card">
+          <div className="icon-stack">
+            <img
+              src="/images/app icon.png"
+              alt="app icon background"
+              className="icon-bg"
+            />
+
+            <img
+              src="/images/computer.png"
+              alt="desktop icon"
+              className="icon-front"
+            />
+          </div>
+
+          <h2 className="warning-title">
+            Hey there! This portfolio is designed for desktop screens.
+          </h2>
+
+          <p className="warning-text">
+            View on a larger screen for the best experience.
+          </p>
+        </div>
       </div>
     </section>
-  )
+  );
 }
 
 export default Welcome;
